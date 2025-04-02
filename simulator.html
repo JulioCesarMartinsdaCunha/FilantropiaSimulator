@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <title>Filantropia Simulator</title>
     </head>
+
+    <body onload="inicializar()">
+
+        <h1>Filantropia Simulator</h1>
         
-    <body>
+        <dt>
+            <strong>Status</strong>
+            <dd>
+                <p id="guiDinheiro">Dinheiro: 0</p>
+                <p id="guiFama">Fama: 0</p>
+                <p id="guiFatura">Faturas vencidas: 0</p>
+                <p id="guiDia">Dia atual: 0</p>
+            </dd>
+        </dt>
+        <br>
+        <div>
+            <h2>Mendigos</h2>    
+            <progress id="pgb-mendigo" max="100" value="0"></progress>
+            <br>
+            <button type="button" onclick="ajudarMendigo()">Ajudar mendigo</button>
+        </div>
+
+        <br>
         
+        <h2>Upgrades!</h2>
+        <p>UUOOOPAAAA!!</p>
+        <table id="upgrades-table">
+            <tr>
+                <th>Upgrades</th>
+                <th>Valor</th>
+            </tr>
+            
+            
+        </table>
+        
+
+        <script src="JS/simulador.js"></script>
     </body>
 </html>
